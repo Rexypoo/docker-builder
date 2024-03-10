@@ -1,6 +1,6 @@
 FROM node:latest AS base
 
-RUN  sh -c "curl -fsSL https://get.docker.com -o get-docker.sh | sh"
+RUN  sh -c "curl -fsSL https://get.docker.com | sh"
 
 # Build with 'docker build -t builder .'
 LABEL org.opencontainers.image.url="https://hub.docker.com/r/rexypoo/builder" \
